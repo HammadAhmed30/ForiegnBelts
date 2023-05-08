@@ -1,0 +1,55 @@
+
+
+
+/* Navbar */
+
+
+.navbar_main_navbar_cnt{
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    left: 0;
+    width: 100%;
+    margin: 20px 0;
+}
+.navbar_flex_cnt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar_logo_image_top{
+    height: 60px;
+}
+.navbar_linker{
+    display: flex;
+    align-items: center;
+}
+.linker_a{
+    margin: 0 1.8em;
+    font-size: 1.1em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-family: "poppins";
+}
+.linker_search_image_icon{
+    height: 20px;
+    cursor: pointer;
+    margin-left: 1.8em;
+}
+.navbar_menu_icon_button{
+    display: none;
+    height: 25px;
+}
+
+
+
+/* Media Quries */
+
+@media only screen and (max-width: 700px) {
+    .navbar_menu_icon_button{
+        display: block;
+    }
+    .navbar_linker{
+        display: none;
+    }
+}

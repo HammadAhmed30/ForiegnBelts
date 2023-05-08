@@ -1,0 +1,42 @@
+/* Font Styles Import */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.app_container{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Some Universal Classes */
+
+.width-100{
+  width: 100%;
+}
+
+.res-1440{
+  width: min(100% - 20px , 1440px);
+  margin-inline: auto;
+  margin: 0 auto;
+}
+.res-1440-40{
+  width: min(100% - 40px , 1440px);
+  margin-inline: auto;
+  margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .res-1440-40{
+    width: min(100% - 20px , 1440px);
+    margin-inline: auto;
+    margin: 0 auto;
+  }
+}
