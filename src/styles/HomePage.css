@@ -1,8 +1,6 @@
-
-
 /* Landing Page */
 
-.landing_page_cnt{
+.landing_page_cnt {
     height: 100vh;
     background-image: url("../../public/images/LandingPageImage.png");
     background-position: center;
@@ -13,8 +11,9 @@
     display: flex;
     align-items: center;
 }
-.landing_page_content_container_h1{
-    font-family: 'Lexend';
+
+.landing_page_content_container_h1 {
+    font-family: "Lexend";
     color: white;
     font-style: normal;
     font-weight: 600;
@@ -22,38 +21,42 @@
     line-height: 88.5%;
     letter-spacing: -0.055em;
 }
-.landing_page_content_container_para_desc{
-    font-family: 'Poppins';
+
+.landing_page_content_container_para_desc {
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 300;
     font-size: 1.1em;
     margin-left: 20px;
     line-height: 140%;
     margin-top: 2em;
-    width: min(100% , 700px);
+    width: min(100%, 700px);
     color: white;
-
 }
 
 
 /* Styling for Any Desire Page */
-.any_desire_main_cnt_with_width_100{
+
+.any_desire_main_cnt_with_width_100 {
     position: relative;
     display: flex;
     z-index: 3;
     justify-content: space-between;
 }
-.any_desire_para_content_part{
-    background-color: #E4E4E4;
+
+.any_desire_para_content_part {
+    background-color: #e4e4e4;
     display: flex;
     align-items: center;
     width: 50%;
 }
-.any_desire_image_prt{
+
+.any_desire_image_prt {
     width: 50%;
 }
-.any_desire_para_content_part_p{
-    font-family: 'Poppins';
+
+.any_desire_para_content_part_p {
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 1.2em;
@@ -63,11 +66,13 @@
     margin: auto;
     letter-spacing: 0.02em;
 }
-.any_desire_image_prt{
+
+.any_desire_image_prt {
     position: relative;
-    height: 90vh;
+    height: 120vh;
 }
-.any_desire_image_prt_img_div{
+
+.any_desire_image_prt_img_div {
     position: absolute;
     width: 80%;
     height: 90%;
@@ -76,16 +81,18 @@
     left: 50%;
     transform: translateX(-50%);
 }
-.any_desire_image_prt_img{
+
+.any_desire_image_prt_img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.any_desire_image_prt_img_div_h2{
+
+.any_desire_image_prt_img_div_h2 {
     position: absolute;
     top: 20px;
     left: 20px;
-    font-family: 'Lexend';
+    font-family: "Lexend";
     font-style: normal;
     font-weight: 600;
     font-size: 2.2em;
@@ -93,7 +100,8 @@
     line-height: 95.5%;
     letter-spacing: -0.045em;
 }
-.side_belt_WWE_absolute_belt{
+
+.side_belt_WWE_absolute_belt {
     width: 42%;
     max-width: 1000px;
     position: absolute;
@@ -102,7 +110,8 @@
     z-index: +3;
     transform: translateY(-50%);
 }
-.side_belt_WWE_absolute_belt_2{
+
+.side_belt_WWE_absolute_belt_2 {
     width: 42%;
     max-width: 1000px;
     position: absolute;
@@ -115,63 +124,141 @@
 
 /* Quality And Relations Page */
 
+.quality_and_relations_main_cnt_with_width_100 {
+    position: relative;
+    display: flex;
+    z-index: 3;
+    justify-content: space-between;
+    /* top: -10rem; */
+}
 
+.quality_and_relation_side_belt_WWE_absolute_belt_2 {
+    width: 48%;
+    max-width: 1000px;
+    position: absolute;
+    right: 0;
+    transform: rotateY(180deg) translateY(-35%);
+    z-index: +300;
+}
 
+.quality_and_relation_image_div {
+    justify-content: row;
+}
 
+.quality_and_relationship_linker_shifter {
+    flex-direction: row;
+    margin-top: 30rem;
+    justify-content: space-evenly;
+    margin-inline-start: 5%;
+}
 
+.quality_and_relationship_linker_shifter_span {
+    font-family: "Poppins";
+    font-style: normal;
+    color: #e4e4e4;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 36px;
+    margin-inline: 5%;
+}
 
+.quality_and_relations_para_content_part {
+    margin-inline: 7.5%;
+    color: #e4e4e4;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-top: 4rem;
+    padding-bottom: 6rem;
+}
 
+.quality_and_relations_para_content_part_p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 136.5%;
+    width: 87%;
+    max-width: 800px;
+    margin: auto;
+    letter-spacing: 0.02em;
+}
+
+.logo_on_page_quality_and_relationship_img {
+    width: 512px;
+    height: 480px;
+    margin-inline-start: 5%;
+    position: absolute;
+    top: -10rem;
+}
+
+.quality_and_relations_image_prt_img_div {
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quality_and_relations_image_prt_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 /* Media Queries */
 
-
 @media only screen and (max-width: 900px) {
-    .any_desire_main_cnt_with_width_100{
+    .any_desire_main_cnt_with_width_100 {
         flex-direction: column-reverse;
     }
-    .any_desire_image_prt{
+    .any_desire_image_prt {
         width: 100%;
         height: 60vh;
     }
-    .any_desire_para_content_part{
+    .any_desire_para_content_part {
         width: 100%;
     }
-    .any_desire_image_prt_img_div{
+    .any_desire_image_prt_img_div {
         width: calc(100% - 20px);
         height: calc(100% - 10px);
     }
-    .any_desire_para_content_part_p{
+    .any_desire_para_content_part_p {
         padding: 10px 0px;
         width: calc(100% - 20px);
         font-size: 1em;
     }
-    .side_belt_WWE_absolute_belt_2{
+    .side_belt_WWE_absolute_belt_2 {
         display: none;
         width: 80%;
     }
-    .side_belt_WWE_absolute_belt{
+    .side_belt_WWE_absolute_belt {
         display: none;
         width: 80%;
     }
 }
+
 @media only screen and (max-width: 700px) {
-    .landing_page_content_container_h1{
+    .landing_page_content_container_h1 {
         font-size: 4em;
     }
-    .landing_page_content_container_para_desc{
+    .landing_page_content_container_para_desc {
         margin-left: 0px;
         font-size: 1em;
     }
-    .any_desire_main_cnt_with_width_100{
+    .any_desire_main_cnt_with_width_100 {
         flex-direction: column-reverse;
     }
 }
+
 @media only screen and (max-width: 350px) {
-    .landing_page_content_container_h1{
+    .landing_page_content_container_h1 {
         font-size: 3.1em;
     }
-    .landing_page_content_container_para_desc{
-        font-size: .9em;
+    .landing_page_content_container_para_desc {
+        font-size: 0.9em;
     }
 }
