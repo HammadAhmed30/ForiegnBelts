@@ -56,7 +56,7 @@ export default function Assure() {
               </div>
             </div>
             <div className="assurePDiv2">
-              <p className="assureP">
+              <p className="assureP2">
                 Our company offers industry-leading color fill and gemstone
                 application for our championship wrestling belts. Our skilled
                 craftsmen use the latest technology and techniques to ensure

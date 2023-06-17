@@ -92,7 +92,6 @@ export default function CustomerReviews() {
 const ReviewBox = ({ name, text }) => {
   return (
     <div className="reviewBoxMain">
-      <div className="emptyDiv"></div>
       <div className="reviewBoxSec">
         <div className="reviewBoxNameDiv">
           <h4 className="reviewBoxNameText">{name}</h4>
