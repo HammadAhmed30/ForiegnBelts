@@ -4,6 +4,7 @@ import AnyDesire from "../components/Home Page/AnyDesire";
 import "../../styles/HomePage.css";
 import QualityandRelation from "../components/Home Page/QualityandRelation";
 import Assure from "../components/Home Page/Assure";
+import CustomerReviews from "../components/Home Page/CustomerReviews";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,8 @@ export default function HomePage() {
       <AnyDesire />
       <QualityandRelation />
       <Assure />
+      <CustomerReviews />
+      <CustomerReviews />
     </div>
   );
 }
