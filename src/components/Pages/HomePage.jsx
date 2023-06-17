@@ -14,7 +14,6 @@ export default function HomePage() {
       <QualityandRelation />
       <Assure />
       <CustomerReviews />
-      <CustomerReviews />
     </div>
   );
 }
