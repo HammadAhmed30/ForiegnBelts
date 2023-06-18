@@ -3,7 +3,7 @@ import React from "react";
 
 function HowItsMade() {
   return (
-    <div className="width-100 HIMMainDiv">
+    <div className="res-1440-in HIMMainDiv">
       <div className="HIMHeadingDiv">
         <p className="HIMHeadingP">How it's Made</p>
       </div>

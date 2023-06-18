@@ -6,7 +6,7 @@ import TestPageForProductDetails from "./components/Pages/TestPageForProductDeta
 
 export default function MainApp() {
   return (
-    <div>
+    <div >
       {/* <HomePage /> */}
       {/* <TestPageForInventoryPage /> */}
       {/* <TestPageForLikedInventory /> */}

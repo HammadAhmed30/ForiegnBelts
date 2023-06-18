@@ -2,11 +2,10 @@ import React from "react";
 
 export default function Assure() {
   return (
-    <div className="width-100 assureMainContentDivWithWidth100">
-      <div className="es-14401">
+    <div className="res-1440-40 assureMainContentDivWithWidth100">
         <img src="./images/031.png" alt="" className="assureBeltImageFront" />
-        <div className="assureH1div">
-          <h1 className="assureH1">Things we assure</h1>
+        <div className="assureH1div res-1440-40">
+          <h1 className="assureH1">Things we<br />assure</h1>
         </div>
         <div className="assureImageTextGroup">
           <div className="assureAboutDiv1">
@@ -100,7 +99,6 @@ export default function Assure() {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 }

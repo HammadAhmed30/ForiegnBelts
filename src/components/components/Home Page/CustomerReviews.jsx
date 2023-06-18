@@ -4,8 +4,8 @@ export default function CustomerReviews() {
   return (
     <div className="width-100 customerReviewsMainDiv">
       <h1 className="customerReviewsH1">Customers' reviews</h1>
-      <div className="res-1440-40 customerReviewsSecondaryDiv">
-        <div className="customerReviewsReviewBoxGroup">
+      <div className="customerReviewsSecondaryDiv">
+        <div className="res-1440-40 customerReviewsReviewBoxGroup">
           <ReviewBox
             name="David Mavrick"
             text="I recently purchased a custom wrestling belt from this company and was blown away by the quality of the craftsmanship. The attention to detail was incredible and the materials used were top-notch. I couldn't be happier with my purchase and would highly recommend this company to any wrestler looking for a championship belt that will stand the test of time."
@@ -82,7 +82,6 @@ export default function CustomerReviews() {
               order for your desire wrestling belts
             </p>
           </div>
-          <img src="./images/Logo.png" alt="" className="ourFeaturesLogo" />
         </div>
       </div>
     </div>
