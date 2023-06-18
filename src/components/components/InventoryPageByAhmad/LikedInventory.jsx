@@ -7,7 +7,7 @@ function LikedInventory() {
         <div className="LIHeadingDiv">
           <p className="LIHeadingText">Liked Inventory</p>
           <div className="LIheadingBrandingDiv">
-            <p className="LIheadingBrandingMain">Foreignerbelts </p>
+            <p className="LIheadingBrandingMain">Foreignerbelts</p>
             <p className="LIheadingBrandingSub">originals</p>
           </div>
         </div>

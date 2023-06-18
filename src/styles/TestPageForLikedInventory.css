@@ -161,7 +161,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 25%;
+  width: 20%;
+  height: auto;
   margin-bottom: 20%;
   margin-top: 2.5%;
   margin-inline-start: auto;
@@ -185,6 +186,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
+  font-size: 0.8rem;
   text-align: center;
   padding-inline: 2%;
   padding-top: 3%;
@@ -200,4 +202,127 @@
   padding-inline: 2%;
   padding-top: 3%;
   padding-bottom: 2%;
+  font-size: 0.8rem;
+}
+
+/* More Products */
+
+.PDisplayMainDiv {
+  overflow: hidden;
+  z-index: 3;
+  justify-content: space-between;
+}
+
+.PDisplayHeadingDiv {
+  margin-inline-start: 7.5%;
+  margin-bottom: 3rem;
+}
+
+.PDisplayHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #000000;
+}
+
+.PDisplaySpanDiv {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.PDisplaySpan {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: auto;
+  background-color: #d9d9d9;
+  margin-bottom: 4rem;
+}
+
+.PDisplaySpanImg {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.875rem;
+}
+
+.PDisplayTitleDiv {
+  padding-inline-start: 2%;
+  padding-inline-start: 7.5%;
+}
+
+.PDisplaySpanTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #000000;
+}
+
+.PDisplaySpanSubtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #000000;
+}
+
+.PDisplaySpanTitleView {
+  display: flex;
+  justify-content: space-between;
+  margin-inline-end: 5%;
+  margin-bottom: 1rem;
+}
+
+.PDisplayLikeView {
+}
+
+.PDisplaySpanLikeImg {
+}
+
+.PDisplaySpanLikeText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.725rem;
+  line-height: 1.125;
+  color: #000000;
+}
+
+.PDisplayRatingImg {
+  width: 20%;
+  height: auto;
+  margin-inline-end: 5%;
+}
+
+.PDisplayRatingView {
+  display: flex;
+  margin-inline-start: 10%;
+  margin-inline-end: auto;
+  margin-bottom: 1.5rem;
+  flex-direction: row;
+}
+
+.PDisplayRatingText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .PDDisplaySpan {
+    width: 100%;
+  }
 }
