@@ -32,6 +32,11 @@ a {
   margin-inline: auto;
   margin: 0 auto;
 }
+.res-1440-in{
+  width: min(100% - 100px, 1440px);
+  margin-inline: auto;
+  margin: 0 auto;
+}
 
 @media only screen and (max-width: 700px) {
   .res-1440-40 {

@@ -60,7 +60,7 @@ function HIMContent({ num, text, img, w, h }) {
         <p className="HIMContentP">{text}</p>
       </div>
       <div className="HIMContentImgDiv">
-        <img classname="HIMContentImg" src={img} width={w} height={h} />
+        <img className="HIMContentImg" src={img} width={w} height={h} />
       </div>
     </div>
   );
@@ -73,7 +73,7 @@ function HIMContent2({ num, text, img, w, h }) {
         <p className="HIMContentP2">{text}</p>
       </div>
       <div className="HIMContentImgDiv">
-        <img classname="HIMContentImg2" src={img} width={w} height={h} />
+        <img className="HIMContentImg2" src={img} width={w} height={h} />
       </div>
     </div>
   );
@@ -86,7 +86,7 @@ function HIMContent5({ num, text, img, w, h }) {
         <p className="HIMContentP2">{text}</p>
       </div>
       <div className="HIMContentImgDiv2">
-        <img classname="HIMContentImg2" src={img} width={w} height={h} />
+        <img className="HIMContentImg2" src={img} width={w} height={h} />
       </div>
     </div>
   );

@@ -1,5 +1,11 @@
 /* Inventory Page Styles */
 
+
+
+
+
+
+
 /* 1. How Its Made */
 
 .HIMMainDiv {
@@ -129,4 +135,87 @@
   width: 100%;
   object-fit: scale-down;
   justify-self: last baseline;
+}
+
+
+/* Inventory Page Top */
+
+.inventoryPage{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  max-height: 1000px;
+  justify-content: space-around;
+}
+.inventoryPageImageImg{
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.inventoryPageContentLogo{
+  width: 55%;
+}
+.inventoryPageImage{
+  height: 100%;
+  width: 50%;
+}
+.inventoryPageContent{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.invenPara{
+  margin-top: 2em;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1em;
+  width: 80%;
+}
+.hTopInven{
+  width: 100%;
+  font-family: "poppins";
+}
+.hTopInven{
+  font-size: 1.3em;
+  line-height: 90%;
+  text-align: right;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 2em 0;
+}
+.hTopInvenSpan{
+  font-size: .9em;
+  font-weight: 600;
+}
+.hExplore{
+  font-size: 2.5em;
+  font-weight: 300;
+  margin: 3em 0px;
+}
+.CategoryImage{
+  position: relative;
+  margin: 50px 0;
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+}
+.CategoryImageImg{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  transition: all 500ms ease;
+}
+.CategoryImageH1{
+  position: absolute;
+  color: white;
+  bottom: 50px;
+  right: 60px;
+  font-weight: 500;
+  font-size: 4.2em;
+}
+.CategoryImage:hover .CategoryImageImg{
+  transform: scale(1.01);;
 }
