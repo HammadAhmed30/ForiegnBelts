@@ -1,11 +1,5 @@
 /* Inventory Page Styles */
 
-
-
-
-
-
-
 /* 1. How Its Made */
 
 .HIMMainDiv {
@@ -127,46 +121,62 @@
   justify-self: last baseline;
 }
 
-
 /* Inventory Page Top */
 
-.inventoryPage{
+.inventoryPage {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+<<<<<<< HEAD:src/styles/TestPage.css
 .inventoryPageImageImg{
+=======
+
+.inventoryPageImageImg {
+  height: 100vh;
+>>>>>>> 59bde7a8f10b0c9bfd8b8771a2ee0039f8c6f124:src/styles/TestPageForInventoryPage.css
   width: 100%;
   height: 100vh;
   max-height: 1000px;
   object-fit: cover;
 }
+<<<<<<< HEAD:src/styles/TestPage.css
 .inventoryPageContentLogo{
   width: 65%;
+=======
+
+.inventoryPageContentLogo {
+  width: 55%;
+>>>>>>> 59bde7a8f10b0c9bfd8b8771a2ee0039f8c6f124:src/styles/TestPageForInventoryPage.css
 }
-.inventoryPageImage{
+
+.inventoryPageImage {
   height: 100%;
   width: 50%;
 }
-.inventoryPageContent{
+
+.inventoryPageContent {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.invenPara{
+
+.invenPara {
   margin-top: 2em;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
   font-size: 1em;
   width: 80%;
 }
-.hTopInven{
+
+.hTopInven {
   width: 100%;
   font-family: "poppins";
 }
-.hTopInven{
+
+.hTopInven {
   font-size: 1.3em;
   line-height: 90%;
   text-align: right;
@@ -174,29 +184,34 @@
   letter-spacing: 1px;
   margin: 2em 0;
 }
-.hTopInvenSpan{
-  font-size: .9em;
+
+.hTopInvenSpan {
+  font-size: 0.9em;
   font-weight: 600;
 }
-.hExplore{
+
+.hExplore {
   font-size: 2.5em;
   font-weight: 500;
   margin: 2em 10px;
 }
-.CategoryImage{
+
+.CategoryImage {
   position: relative;
   margin: 50px 0;
   cursor: pointer;
   width: 100%;
   overflow: hidden;
 }
-.CategoryImageImg{
+
+.CategoryImageImg {
   height: 100%;
   width: 100%;
   object-fit: contain;
   transition: all 500ms ease;
 }
-.CategoryImageH1{
+
+.CategoryImageH1 {
   position: absolute;
   color: white;
   bottom: 50px;
@@ -204,6 +219,7 @@
   font-weight: 500;
   font-size: 4.2em;
 }
+<<<<<<< HEAD:src/styles/TestPage.css
 .CategoryImage:hover .CategoryImageImg{
   transform: scale(1.01);
 }
@@ -265,3 +281,9 @@
     font-size: 1.5em;
   }
 }
+=======
+
+.CategoryImage:hover .CategoryImageImg {
+  transform: scale(1.01);
+}
+>>>>>>> 59bde7a8f10b0c9bfd8b8771a2ee0039f8c6f124:src/styles/TestPageForInventoryPage.css
