@@ -1,20 +1,17 @@
 import React from "react";
 import HowitsMade from "../components/InventoryPageByAhmad/HowItsMade";
-import "../../styles/TestPage.css";
+import "../../styles/TestPageForInventoryPage.css";
 import InventoryPageTop from "../components/InventoryPageByHammad/InventoryPageTop";
 import ExploreMore from "../components/InventoryPageByHammad/exploreMore";
 
-function TestPage() {
+function TestPageForInventoryPage() {
   return (
     <div className="width-100">
-      <InventoryPageTop/>
-      <ExploreMore/>
+      <InventoryPageTop />
+      <ExploreMore />
       <HowitsMade />
-
     </div>
-    
-
   );
 }
 
-export default TestPage;
+export default TestPageForInventoryPage;
