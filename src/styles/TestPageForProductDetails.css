@@ -1,0 +1,238 @@
+/* Product Details Page Styles */
+
+/* Product Details */
+
+.PDMain {
+  overflow: hidden;
+  z-index: 3;
+  justify-content: space-between;
+}
+
+.PDHeader {
+  display: flex;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-inline: 10%;
+}
+
+.PDSec {
+  width: 100%;
+  height: 100%;
+}
+
+.PDBrandingDiv {
+  justify-content: space-evenly;
+}
+
+.PDCategoryPath {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #000000;
+}
+
+.PDBrandingMain {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1rem;
+  color: #000000;
+}
+
+.PDBrandingSub {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #000000;
+  text-align: right;
+}
+
+.PDCategoryImgCard {
+  position: relative;
+  margin-inline: auto;
+  width: 70%;
+  height: auto;
+  background-color: pink;
+}
+
+.PDCategoryImg {
+  width: 100%;
+  height: auto;
+}
+
+.PDBestSellingTag {
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  width: 12.5%;
+  min-width: 8%;
+  height: auto;
+  flex-direction: row;
+  padding: 1%;
+  float: right;
+  position: absolute;
+  right: 2.5rem;
+  top: 2.25rem;
+  border-radius: 2rem;
+}
+
+.PDBestSellingTagStar {
+  margin-inline: auto;
+  width: 10%;
+  height: 10%;
+}
+
+.PDBestSellingTagText {
+  margin-inline: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.85rem;
+  line-height: 1.75rem;
+  color: #ffffff;
+}
+
+.PDCategoryImgZoomButton {
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  width: 3.5%;
+  max-width: 4%;
+  max-height: 6.7;
+  height: 5.8%;
+  aspect-ratio: 1;
+  flex-direction: row;
+  padding: 1%;
+  float: right;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  border-radius: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.PDCategoryImgZoomButtonImg {
+  width: 70%;
+  height: 70%;
+}
+
+/* Product Details Descriptions */
+
+.PDDetailsView {
+  margin-top: 10rem;
+  width: 70%;
+  align-self: center;
+  height: auto;
+  margin-inline: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.PDDetailsViewSec {
+  width: 100%;
+  height: auto;
+}
+
+.PDDetailsViewTer {
+  width: 100%;
+  height: auto;
+}
+
+.PDDetailsTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.7rem;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 4rem;
+}
+
+.PDDetailsDescriptionH {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.PDDetailsDescripton {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 123.19%;
+  letter-spacing: 0.015em;
+  color: #000000;
+  margin-bottom: 4rem;
+}
+
+.PDDetailsProductRatingView {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-inline-end: 10%;
+  align-items: center;
+}
+
+.PDDetailsProductRatingStars {
+  margin-inline-end: 1%;
+  width: 6%;
+  height: auto;
+  object-fit: contain;
+}
+
+.PDDetailsProductRatingReviews {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: #000000;
+}
+
+.PDDetailBeltView {
+  display: flex;
+  flex-direction: row;
+}
+
+.PDDetailsBeltImg {
+  width: 50%;
+  height: auto;
+  margin-inline-end: 10%;
+  margin-bottom: 2.85rem;
+}
+
+.PDDetailsTerH {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.PDDetailsTerDescription {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
