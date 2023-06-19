@@ -20,15 +20,7 @@ export default function QualityandRelation() {
           />
         </div>
 
-        <div className="quality_and_relationship_linker_shifter">
-          <span className="quality_and_relationship_linker_shifter_span">
-            Quality
-          </span>
-
-          <span className="quality_and_relationship_linker_shifter_span">
-            Our relation
-          </span>
-        </div>
+        
         <div className="quality_and_relations_para_content_part">
           <p className="quality_and_relations_para_content_part_p">
             Our focus moved beyond the ring and into unique areas of business
