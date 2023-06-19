@@ -1,0 +1,162 @@
+/* Styles For Inquiry Form Page */
+
+/* Header */
+
+.hTopInven {
+  width: 100%;
+  font-family: "poppins";
+}
+
+.hTopInven {
+  font-size: 1.3em;
+  line-height: 90%;
+  text-align: right;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 2em 0;
+}
+
+.hTopInvenSpan {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.IFDivider {
+  max-width: 80%;
+  height: 1px;
+  background-color: black;
+  margin-inline: auto;
+}
+
+.IFMainCard {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  height: auto;
+  margin: 7.5rem 0rem;
+  align-items: center;
+}
+
+.IFHowThingsWork-HTW {
+  width: 33.33%;
+  height: auto;
+  background: #ffffff;
+  padding: 2.25rem 1.75rem;
+}
+
+.IFHTWHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 275;
+  line-height: 1.75rem;
+  letter-spacing: -0.02em;
+  color: #393939;
+}
+
+.StepMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2.25rem;
+}
+
+.IFStepView {
+  margin: 1rem 0rem;
+}
+
+.StepHeading {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.45rem;
+  line-height: 88.5%;
+  letter-spacing: -0.055em;
+  color: #000000;
+  margin: 1rem 0rem;
+}
+
+.StepText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 275;
+  font-size: 1.175rem;
+  line-height: 99.5%;
+  letter-spacing: -0.02em;
+  color: #5a5a5a;
+}
+
+.IFFormInputs {
+  width: 66.67%;
+  background: #ececec;
+  padding: 2rem 4rem;
+}
+
+.IFHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.75rem;
+  line-height: 4rem;
+  color: #5a5a5a;
+  margin-bottom: 2rem;
+}
+
+.IFInputFieldView {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-inline: auto;
+  text-align: left;
+  justify-content: space-evenly;
+  padding: 1rem 0rem;
+}
+
+.IFPlaceholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 275;
+  font-size: 1rem;
+  line-height: 99.5%;
+  letter-spacing: -0.02em;
+  color: #090909;
+  margin-bottom: 1.25rem;
+}
+
+.IFInputField {
+  background: none;
+  outline: none;
+  border: none;
+  /* width: 130%; */
+  border-bottom: 1px solid #767676;
+}
+
+.IFMainForm {
+  width: 85%;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.IFDoubleInputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.IFSingleInput {
+  width: 100%;
+}
+
+.IFSingleInputHalf {
+  width: 40%;
+}
+
+.SendAndCall {
+  margin-bottom: -8rem;
+  margin-inline-end: 10rem;
+}
+
+/* bg none;
+outline none;
+ border none;
+ border-bottom 2px solid black; */
