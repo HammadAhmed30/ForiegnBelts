@@ -350,8 +350,8 @@
   display: flex;
   flex-direction: column;
   background-color: #f8f8f8;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-inline: 3rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -631,7 +631,17 @@
     width: 100%;
     margin-inline: 0px;
   }
-  
+  .ourFeaturesImage{
+    height: 3rem;
+    width: 3rem;
+  }
+  .reviewBoxSec{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .customerReviewsReviewBoxGroup{
+    margin-top: -10px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -646,13 +656,16 @@
     flex-direction: column-reverse;
   }
   .orderNowAndSendinquiryButtonP{
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
   .logo_on_page_quality_and_relationship_img{
     width: 100%;
     height: auto;
     top: 1em;
     margin-inline-start: 0px;
+  }
+  .ourFeaturesP{
+    font-size: .8em;
   }
   
 }

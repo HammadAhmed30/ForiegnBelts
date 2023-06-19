@@ -8,10 +8,7 @@
   justify-content: space-between;
 }
 
-.LISecDiv {
-  width: 100%;
-  height: 100%;
-}
+
 
 .LIHeadingDiv {
   display: flex;
@@ -19,7 +16,6 @@
   margin-bottom: 4%;
   flex-direction: row;
   justify-content: space-between;
-  margin-inline: 10%;
 }
 
 .LIHeadingText {
@@ -66,41 +62,41 @@
 .ProductDivMain {
   display: flex;
   background-color: #c6c6c6;
-  width: 90%;
+  /* width: 90%; */
+
   height: 10%;
-  padding-inline: 2%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding: 20px;
   flex-direction: row;
-  margin-bottom: 2.5%;
+  margin-bottom: 1em;
+  align-items: center;
 }
 
 .ProductDivImgMain {
-  max-width: 20%;
-  max-height: auto;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
 }
 
 .ProductDivImg {
-  width: 75%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .ProductDivContentMain {
+  margin-left: 20px;
   width: 60%;
   height: auto;
 }
 
 .ProductDivContentHeading {
-  padding-top: 3%;
-  padding-bottom: 2%;
   justify-content: space-between;
 }
 
 .ProductDivTitle {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.42rem;
   line-height: 1.8rem;
   color: #000000;
@@ -109,8 +105,8 @@
 .ProductDivSubtitle {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 300;
-  font-size: 1.25rem;
+  font-weight: 400;
+  font-size: 1.1rem;
   line-height: 1.8rem;
   color: #000000;
 }
@@ -118,14 +114,13 @@
 .ProductDivContentDesc {
   width: 60%;
   height: auto;
-  margin-bottom: 2%;
 }
 
 .ProductDivDesc {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  font-size: 1.05rem;
+  font-size: .9em;
   line-height: 123%;
   letter-spacing: 0.015em;
   color: #000000;
@@ -167,37 +162,51 @@
   margin-inline-start: auto;
   margin-inline-end: 10%;
 }
-
-.SendDiv {
-  background-color: #000000;
-  width: 48%;
-  border: 1px solid white;
+.btnForSendInquirySend{
+  padding: 10px 25px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-
-.CallDiv {
-  background-color: #ffffff;
-  width: 48%;
+.btnForSendInquiryCancel{
+  margin-left: 10px;
   border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 25px;
 }
 
-.SendText {
-  color: whitesmoke;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
-  text-align: center;
-  padding-inline: 2%;
-  padding-top: 3%;
-  padding-bottom: 2%;
+.btnForSendInquiry{
+  text-align: right;
+  margin: 2em 0px;
 }
 
-.CallText {
-  color: black;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
-  text-align: center;
-  padding-inline: 2%;
-  padding-top: 3%;
-  padding-bottom: 2%;
+
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+  .ProductDivContentDesc{
+    width: 100%;
+  }
+  .ProductDivSelectMain{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .ProductDivContentDesc{
+    display: none;
+  }
+  .ProductDivMain{
+    width: 100%;
+    padding: 10px;
+  }
+  .ProductDivImgMain{
+    width: 80px;
+    height: 80px;
+  }
+  .ProductDivContentMain{
+    width: 100%;
+  }
 }
