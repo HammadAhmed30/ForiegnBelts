@@ -57,8 +57,8 @@
 .any_desire_para_content_part_p {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 500;
-  font-size: 1.2em;
+  font-weight: 300;
+  font-size: 1.4em;
   line-height: 136.5%;
   width: 87%;
   max-width: 800px;
@@ -145,7 +145,6 @@
 
 .quality_and_relationship_linker_shifter {
   flex-direction: row;
-  margin-top: 30rem;
   justify-content: space-evenly;
   margin-inline-start: 5%;
 }
@@ -164,21 +163,23 @@
   margin-inline: 7.5%;
   color: #e4e4e4;
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 50%;
-  margin-top: 4rem;
+  margin-top: 0em;
   padding-bottom: 10rem;
 }
 
 .quality_and_relations_para_content_part_p {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 300;
-  font-size: 1.2em;
+  font-weight: 200;
+  font-size: 1.1em;
   line-height: 136.5%;
   width: 87%;
   max-width: 800px;
   margin: auto;
+  margin-top: 20px;
   letter-spacing: 0.02em;
 }
 
@@ -186,8 +187,8 @@
   width: 512px;
   height: 480px;
   margin-inline-start: 5%;
-  position: absolute;
-  top: -10rem;
+  position: relative;
+  top: -7em;
 }
 
 .quality_and_relations_image_prt_img_div {
@@ -210,25 +211,27 @@
 
 .assureMainContentDivWithWidth100 {
   position: relative;
-  display: flex;
   z-index: 3;
   justify-content: space-between;
-  height: 90vh;
   align-items: center;
   margin-inline: auto;
 }
 
 .assureBeltImageFront {
   position: absolute;
-  top: -29rem;
   width: 100%;
+  top: 0;
+  transform: translateY(-53%);
 }
-
+.assureMainContentDivWithWidth100{
+  position: relative;
+}
 .assureAboutDiv1 {
   display: flex;
   flex-direction: row;
   margin-top: 6rem;
   margin-bottom: 5rem;
+  align-items: center;
   margin-inline: 7.5%;
 }
 
@@ -238,15 +241,12 @@
   margin-top: 6rem;
   margin-bottom: 5rem;
   margin-inline: 7.5%;
+  align-items: center;
 }
 
 .assureImgDiv1 {
   position: relative;
-  top: -5rem;
   width: 50%;
-  height: 15%;
-  margin-inline-start: 5%;
-  margin-inline-end: 5%;
 }
 
 .assureImgs {
@@ -254,18 +254,14 @@
   height: 100%;
 }
 
-.assureImageTextGroup {
-  position: absolute;
-  top: 57%;
-}
 
 .assurePDiv1 {
-  width: 60%;
+  width: 65%;
   margin-inline-start: 10%;
 }
 
 .assurePDiv2 {
-  width: 60%;
+  width: 65%;
   margin-inline-end: 10%;
 }
 
@@ -273,7 +269,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 125.5%;
   letter-spacing: 0.0175em;
   text-align: right;
@@ -283,7 +279,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 125.5%;
   letter-spacing: 0.0175em;
   text-align: left;
@@ -293,9 +289,11 @@
   font-family: "Lexend";
   font-style: normal;
   font-weight: 600;
-  font-size: 7rem;
+  font-size: 6em;
   width: 100%;
   line-height: 88.5%;
+  text-align: right;
+  padding-top: 1em;
   letter-spacing: -0.054em;
 }
 
@@ -307,20 +305,10 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 136.5%;
   text-align: center;
   letter-spacing: 0.02em;
-}
-
-.assureH1div {
-  margin-inline-start: 55%;
-  position: absolute;
-  top: 33%;
-  flex: display;
-  width: 45%;
-  height: 10%;
-  justify-content: left;
 }
 
 /* Customers' Reviews */
@@ -331,13 +319,12 @@
   z-index: 3;
   justify-content: space-between;
   margin-inline: auto;
-  top: 130rem;
   flex-direction: column;
 }
 
 .customerReviewsSecondaryDiv {
   background-color: #393939;
-  margin-top: 10rem;
+  margin-top: em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -348,16 +335,14 @@
 
 .customerReviewsReviewBoxGroup {
   display: flex;
-  margin-top: -2rem;
+  margin-top: -1em;
   flex-direction: column;
   align-self: center;
-  width: 90%;
 }
 
 .reviewBoxMain {
   display: flex;
   flex-direction: row;
-  height: 10%;
   width: 100%;
 }
 
@@ -365,11 +350,11 @@
   display: flex;
   flex-direction: column;
   background-color: #f8f8f8;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-inline: 3rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 99%;
 }
 
@@ -389,7 +374,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 136.5%;
   text-align: center;
   letter-spacing: 0.02em;
@@ -400,7 +385,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 136.5%;
   letter-spacing: 0.02em;
   color: #000000;
@@ -410,23 +395,30 @@
   font-family: "Lexend";
   font-style: normal;
   font-weight: 600;
-  font-size: 8rem;
+  font-size: 6em;
   line-height: 60.5%;
+  margin-bottom: 1em;
   letter-spacing: -0.055em;
   margin-inline-start: 5%;
 }
 
+.reviewBoxSec{
+  border-left: 10px solid gray;
+}
+
+
 /* Our Features */
 
 .ourFeaturesMain {
-  width: 69%;
+  width: min(100%, 800px);
   height: 11.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   align-self: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2em;
+  margin-top: 1em;
   background-color: #878787;
 }
 
@@ -434,8 +426,8 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 136.5%;
+  font-size: 1em;
+  line-height: 100.5%;
   text-align: center;
   letter-spacing: 0.02em;
 }
@@ -463,14 +455,14 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.6em;
   line-height: 142.5%;
   color: #ffffff;
 }
 
 .orderNowAndSendinquiryButtonMainDiv {
   margin-inline-start: 5%;
-  margin-bottom: 6rem;
+  margin-bottom: 2em;
 }
 
 .orderNowAndSendinquiryButtonTag {
@@ -581,6 +573,8 @@
     padding: 10px 0px;
     width: calc(100% - 20px);
     font-size: 1em;
+    margin: 3em 10px;
+    z-index: 10;
   }
   .side_belt_WWE_absolute_belt_2 {
     display: none;
@@ -589,6 +583,64 @@
   .side_belt_WWE_absolute_belt {
     display: none;
     width: 80%;
+  }
+  .assureAboutDiv1{
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 3%;
+  }
+  .assureAboutDiv2{
+    align-items: center;
+    flex-direction: column;
+    margin-inline: 3%;
+  }
+  .assureImgDiv1{
+    width: 100%;
+  }
+  .assureImgDiv2{
+    width: 100%;
+  }
+  .assurePDiv1{
+    width: 100%;  
+    margin-inline-start: 0%;
+    text-align: center;
+  }
+  .assurePDiv2{
+    margin-inline-end: 0%;
+    text-align: center;
+    width: 100%;
+  }
+  .assureP{
+    margin-top: 1em;
+    text-align: center;
+  }
+  .assureP2{
+    margin-top: 1em;
+    text-align: center;
+  }
+  .assureH1{
+    font-size: 4em;
+  }
+  .customerReviewsH1{
+    font-size: 3em;
+  }
+  .quality_and_relation_side_belt_WWE_absolute_belt_2{
+    display: none;
+  }
+  .quality_and_relations_para_content_part{
+    width: 100%;
+    margin-inline: 0px;
+  }
+  .ourFeaturesImage{
+    height: 3rem;
+    width: 3rem;
+  }
+  .reviewBoxSec{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .customerReviewsReviewBoxGroup{
+    margin-top: -10px;
   }
 }
 
@@ -603,6 +655,19 @@
   .any_desire_main_cnt_with_width_100 {
     flex-direction: column-reverse;
   }
+  .orderNowAndSendinquiryButtonP{
+    font-size: 1.1em;
+  }
+  .logo_on_page_quality_and_relationship_img{
+    width: 100%;
+    height: auto;
+    top: 1em;
+    margin-inline-start: 0px;
+  }
+  .ourFeaturesP{
+    font-size: .8em;
+  }
+  
 }
 
 @media only screen and (max-width: 350px) {

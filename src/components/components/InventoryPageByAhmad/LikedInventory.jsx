@@ -3,7 +3,7 @@ import React from "react";
 function LikedInventory() {
   return (
     <div className="width-100 LIMainDiv">
-      <div className=".res-1440-40 LISecDiv">
+      <div className="res-1440-in LISecDiv">
         <div className="LIHeadingDiv">
           <p className="LIHeadingText">Liked Inventory</p>
           <div className="LIheadingBrandingDiv">
@@ -16,6 +16,10 @@ function LikedInventory() {
           <ProductDiv />
           <ProductDiv />
         </div>
+        <div className="btnForSendInquiry">
+          <button className="btnForSendInquirySend">Send Inquiry</button>
+          <button className="btnForSendInquiryCancel">Cancel</button>
+        </div>
       </div>
     </div>
   );
@@ -25,13 +29,11 @@ function ProductDiv() {
   return (
     <div className="ProductDivMain">
       <div className="ProductDivImgMain">
-        {/*eslint-disable-next-line jsx-a11y/alt-text*/}
         <img src="./images/LIProductBelt.png" className="ProductDivImg" />
       </div>
       <div className="ProductDivContentMain">
         <div className="ProductDivContentHeading">
           <p className="ProductDivTitle">WWE® Raw Tag Team Title</p>
-          <p className="ProductDivSubtitle">Product Code: 7584231</p>
         </div>
         <div className="ProductDivContentDesc">
           <p className="ProductDivDesc">
@@ -43,8 +45,6 @@ function ProductDiv() {
         </div>
       </div>
       <div className="ProductDivSelectMain">
-        <p className="ProductDivSelectIcon">ø</p>
-        <p className="ProductDivSelectText">Select</p>
       </div>
     </div>
   );
