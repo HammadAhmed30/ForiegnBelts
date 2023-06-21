@@ -1,5 +1,6 @@
 import React from "react";
 import "../../../styles/TestPageForProductDetails.css";
+import { Link } from "react-router-dom";
 
 function ProductDisplay() {
   return (
@@ -10,33 +11,39 @@ function ProductDisplay() {
         </p>
       </div>
       <div className="PDisplaySpanDiv">
-        <ProductView />
-        <ProductView />
-        <ProductView />
-        <ProductView />
+        <Link to="/prime">
+        <ProductView name={"Prime"} img={"/images/image prime.png"} />
+        </Link>
+        
+        <Link to="/classic">
+        <ProductView name={"Classic"} img={"/images/image classic.png"}  />
+        </Link>
+        
+        <Link to="/economy">
+        <ProductView name={"Economy"} img={"/images/image economy.png"}  />
+        </Link>
+        
+        <Link to="/custom">
+        <ProductView name={"Custom"} img={"/images/image custom.png"}  />
+        </Link>
+        
       </div>
     </div>
   );
 }
 
-function ProductView() {
+function ProductView({name, img}) {
   return (
-    <div className="PDisplaySpan">
-      <img src="./images/LIProductBelt.png" className="PDisplaySpanImg" />
+    <div className="PDisplaySpan" style={{color:"black"}}>
+      <img src={img} className="PDisplaySpanImg" />
       <div className="PDisplaySpanTitleView">
         <div className="PDisplayTitleDiv">
-          <p className="PDisplaySpanTitle">WWE® Raw Tag Team Title</p>
+          <p className="PDisplaySpanTitle">{name}</p>
         </div>
         <div className="PDisplayLikeView">
-          <img
-            onClick={(e) => {
-              e.target.src = "./images/filledheart.png";
-            }}
-            src="./images/heart.png"
-            className="PDisplaySpanLikeImg"
-          />
+          <div></div>
           <div className="PDisplayRatingView">
-            <img src="./images/ReviewStars.png" className="PDisplayRatingImg" />
+            <img src="/images/ReviewStars.png" className="PDisplayRatingImg" />
             <p className="PDisplayRatingText">(125+ reviews)</p>
           </div>
         </div>

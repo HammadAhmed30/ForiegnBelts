@@ -6,10 +6,10 @@ export default function ExploreMore() {
     <div className="width-100">
       <div className="res-1440-in">
         <p className="hExplore">Explore more</p>
-        <CategoryImage name="Prime" imgUrl="./images/image prime.png" />
-        <CategoryImage name="Classic" imgUrl="./images/image classic.png" />
-        <CategoryImage name="Economy" imgUrl="./images/image economy.png" />
-        {/* <CategoryImage name="Custom" imgUrl="./images/image Custom.png" /> */}
+        <CategoryImage name="Prime" imgUrl="/images/image prime.png" />
+        <CategoryImage name="Classic" imgUrl="/images/image classic.png" />
+        <CategoryImage name="Economy" imgUrl="/images/image economy.png" />
+        <CategoryImage name="Custom" imgUrl="/images/image Custom.png" />
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ export default function Navbar() {
       <SearchMenu search={search} setSearch={setSearch} />
 
       <div className="res-1440-40 navbar_flex_cnt">
-        <Link to="/"><img className="navbar_logo_image_top" src="./images/Logo.png" alt="" /></Link>
+        <Link to="/"><img className="navbar_logo_image_top" src="/images/Logo.png" alt="" /></Link>
         <div className="navbar_linker">
           <Link className="linker_a" to="/">
             Home
@@ -34,7 +34,7 @@ export default function Navbar() {
               setSearch(true);
             }}
             className="linker_search_image_icon"
-            src="./images/search_icon.png"
+            src="/images/search_icon.png"
             alt=""
           />
         </div>
@@ -43,7 +43,7 @@ export default function Navbar() {
             setMenu(true);
           }}
           className="navbar_menu_icon_button"
-          src="./images/menu.png"
+          src="/images/menu.png"
           alt=""
         />
       </div>
@@ -61,7 +61,7 @@ const MainMenu = ({ menu, setMenu }) => {
           setMenu(false);
         }}
         className="navbar_menu_icon_button_cross"
-        src="./images/close.png"
+        src="/images/close.png"
         alt=""
       />
 
@@ -128,7 +128,7 @@ const SearchMenu = ({ search, setSearch }) => {
             setSearchText("");
           }}
           className="navbar_menu_icon_button_cross_search"
-          src="./images/close.png"
+          src="/images/close.png"
           alt=""
         />
       </div>

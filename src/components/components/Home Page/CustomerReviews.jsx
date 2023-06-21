@@ -22,62 +22,7 @@ export default function CustomerReviews() {
             name="John"
             text="I've been wrestling for years and have had my fair share of championship belts, but none have been as impressive as the one I received from this company. The attention to detail and quality of the materials used really set this belt apart from the rest. I've received so many compliments on it and am proud to wear it as a symbol of my hard work and dedication to the sport."
           />
-          <div className="ourFeaturesMain">
-            <div className="ourFeaturesBox">
-              <img
-                src="./images/image2.png"
-                alt="truck"
-                className="ourFeaturesImage"
-              />
-              <p className="ourFeaturesP">On time delivery</p>
-            </div>
-            <div className="ourFeaturesBox">
-              <img
-                src="./images/image1.png"
-                alt=""
-                className="ourFeaturesImage"
-              />
-              <p className="ourFeaturesP">
-                Certified
-                <br />
-                Materials
-              </p>
-            </div>
-            <div className="ourFeaturesBox">
-              <img
-                src="./images/image3.png"
-                alt=""
-                className="ourFeaturesImage"
-              />
-              <p className="ourFeaturesP">
-                Quality
-                <br />
-                Checks
-              </p>
-            </div>
-            <div className="ourFeaturesBox">
-              <img
-                src="./images/image4.png"
-                alt=""
-                className="ourFeaturesImage"
-              />
-              <p className="ourFeaturesP">
-                After Sales
-                <br />
-                Customer Service
-              </p>
-            </div>
-          </div>
-          <div className="orderNowAndSendinquiryButtonMainDiv">
-            <p className="orderNowAndSendinquiryButtonP">
-              <a href="" className="orderNowAndSendinquiryButtonTag">
-                Order Now
-              </a>{" "}
-              to place
-              <br />
-              order for your desire wrestling belts
-            </p>
-          </div>
+          
         </div>
       </div>
     </div>
