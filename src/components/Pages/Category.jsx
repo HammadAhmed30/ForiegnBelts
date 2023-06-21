@@ -4,8 +4,11 @@ import "../../styles/TestPageForProductDetails.css";
 import { commerce } from "../../lib/commerce";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
+import LikedBar from "../components/Header Footer/LikedBar";
+import Spinner from "../components/Spinner/Spinner";
 
 export default function Category() {
+  const [loading, setLoading] = useState(true)
   const { cata } = useParams();
   const [products, setProducts] = useState([]);
   const fetchProducts = async () => {
@@ -13,6 +16,7 @@ export default function Category() {
       limit: 100,
     });
     setProducts(data);
+    setLoading(false)
   };
   console.log(products);
 
@@ -25,7 +29,8 @@ export default function Category() {
   );
 
   return (
-    <div className="res-1440-in productCategoryPageCnt">
+    <div className="productCategoryPageCnt">
+      <LikedBar/>
       <div className="res-1440-in">
         <h1 className="hTopInven">
           Foreignerbelts
@@ -34,6 +39,7 @@ export default function Category() {
         </h1>
       </div>
       <div className="PDisplaySpanDiv">
+      {loading && <Spinner/>}
         {filteredProducts.map((item, index) => {
           return (
             <Link

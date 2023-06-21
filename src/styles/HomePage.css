@@ -410,13 +410,14 @@
 /* Our Features */
 
 .ourFeaturesMain {
-  width: min(100%, 800px);
+  width: min(100% - 20px, 800px);
   height: 11.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   z-index: 500;
   align-items: center;
+  border-radius: 5px;
   align-self: center;
   margin-bottom: 2em;
   margin-inline: auto;
@@ -824,6 +825,9 @@
   }
   .liked_bar_cnt_p{
     font-size: .8em;
+  }
+  .ourFeaturesMain{
+    margin-top: 2em;
   }
   
 }

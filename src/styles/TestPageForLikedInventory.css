@@ -212,4 +212,7 @@
   .ProductDivContentMain{
     width: 100%;
   }
+  .ProductDivTitle{
+    font-size: 1em;
+  }
 }
