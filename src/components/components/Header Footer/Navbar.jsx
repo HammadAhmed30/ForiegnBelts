@@ -2,11 +2,20 @@ import React, { useState, useEffect } from "react";
 import "../../../styles/Navbar.css";
 import { commerce } from "../../../lib/commerce";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
 
 
 export default function Navbar() {
   const [menu, setMenu] = useState(false);
   const [search, setSearch] = useState(false);
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState('');
+
+  React.useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
+  
 
   return (
     <div className="width-100 navbar_main_navbar_cnt">
@@ -16,16 +25,16 @@ export default function Navbar() {
       <div className="res-1440-40 navbar_flex_cnt">
         <Link to="/"><img className="navbar_logo_image_top" src="/images/Logo.png" alt="" /></Link>
         <div className="navbar_linker">
-          <Link className="linker_a" to="/">
+          <Link className={`linker_a  ${activeLink === '/' ? 'bold' : ''}`} to="/" >
             Home
           </Link>
-          <Link className="linker_a" to="/inventory">
+          <Link className={`linker_a  ${activeLink === '/inventory' ? 'bold' : ''}`} to="/inventory">
             Inventory
           </Link>
-          <Link className="linker_a" to="">
+          <Link className={`linker_a  ${activeLink === '/process' ? 'bold' : ''}`} to="/process">
             Process
           </Link>
-          <Link className="linker_a" to="">
+          <Link className={`linker_a  ${activeLink === '/contact' ? 'bold' : ''}`} to="">
             Contact
           </Link>
           <img

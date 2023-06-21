@@ -5,6 +5,7 @@ import TestPageForLikedInventory from "./components/Pages/TestPageForLikedInvent
 import TestPageForProductDetails from "./components/Pages/TestPageForProductDetails";
 import { Routes, Route } from "react-router-dom";
 import Category from "./components/Pages/Category";
+import HowItsMade from "./components/components/InventoryPageByAhmad/HowItsMade";
 
 export default function MainApp() {
   return (
@@ -15,6 +16,7 @@ export default function MainApp() {
         <Route path="/liked" element={<TestPageForLikedInventory/>}/>
         <Route path="/:cata/:prodId" element={<TestPageForProductDetails/>}/>
         <Route path="/:cata" element={<Category/>}/>
+        <Route path="/process" element={<HowItsMade/>}/>
       </Routes>
     </div>
   );
