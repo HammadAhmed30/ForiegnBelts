@@ -63,6 +63,12 @@ export default function Navbar() {
 // Main Menu Component
 
 const MainMenu = ({ menu, setMenu }) => {
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState('');
+
+  React.useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
   return (
     <div className="main_menu_cnt" style={{ left: menu ? "0" : "100%" }}>
       <img
@@ -77,22 +83,22 @@ const MainMenu = ({ menu, setMenu }) => {
       <div className="main_menu_links">
         <Link onClick={()=>{
           setMenu(false)
-        }} className="linker_a" to="/">
+        }} className={`linker_a  ${activeLink === '/' ? 'bold' : ''}`} to="/">
           Home
         </Link>
         <Link onClick={()=>{
           setMenu(false)
-        }} className="linker_a" to="/inventory">
+        }} className={`linker_a  ${activeLink === '/inventory' ? 'bold' : ''}`} to="/inventory">
           Inventory
         </Link>
         <Link onClick={()=>{
           setMenu(false)
-        }} className="linker_a" to="">
+        }} className={`linker_a  ${activeLink === '/process' ? 'bold' : ''}`} to="/process">
           Process
         </Link>
         <Link onClick={()=>{
           setMenu(false)
-        }} className="linker_a" to="">
+        }} className={`linker_a  ${activeLink === '/contact' ? 'bold' : ''}`} to="/contact">
           Contact
         </Link>
       </div>

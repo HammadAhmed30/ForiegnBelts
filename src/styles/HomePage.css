@@ -163,24 +163,53 @@
   margin-inline: 7.5%;
   color: #e4e4e4;
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   width: 50%;
   margin-top: 0em;
-  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20em;
+  overflow: hidden;
 }
 
 .quality_and_relations_para_content_part_p {
   font-family: "Poppins";
   font-style: normal;
+  position: absolute;
   font-weight: 200;
   font-size: 1.1em;
   line-height: 136.5%;
-  width: 87%;
+  width: 100%;
   max-width: 800px;
   margin: auto;
   margin-top: 20px;
   letter-spacing: 0.02em;
+  top: 0;
+  transition: all 500ms ease;
+}
+
+.active_para_1{
+  left: 0;
+
+}
+.non_active_para_1{
+  left: -110%;
+
+}
+.active_para_2{
+  left: 0;
+
+}
+.non_active_para_2{
+  left: 110%;
+
+}
+
+.btn_quality_and_relation{
+  z-index: 100;
+  cursor: pointer;
 }
 
 .logo_on_page_quality_and_relationship_img {
@@ -221,10 +250,22 @@
   position: absolute;
   width: 100%;
   top: 0;
-  transform: translateY(-53%);
+  transform: translateY(-45%);
 }
 .assureMainContentDivWithWidth100{
   position: relative;
+}
+.btn_quality_and_relation_div{
+  margin-inline-start: 7.5%;
+}
+.btn_quality_and_relation{
+  border: none;
+  outline: none;
+  background-color: rgba(245, 245, 220, 0);
+  color: white;
+  margin-bottom: 1em;
+  font-size: 1.1em;
+  font-weight: 200;
 }
 .assureAboutDiv1 {
   display: flex;
@@ -253,7 +294,9 @@
   width: 100%;
   height: 100%;
 }
-
+.bold{
+  font-weight: 400;
+}
 
 .assurePDiv1 {
   width: 65%;
@@ -781,6 +824,10 @@
     width: 100%;
     margin-inline: 0px;
   }
+  .reviewBoxReviewText{
+    font-size: .9em;
+    line-height: 120%;
+  }
   .ourFeaturesImage{
     height: 3rem;
     width: 3rem;
@@ -791,6 +838,19 @@
   }
   .customerReviewsReviewBoxGroup{
     margin-top: -10px;
+  }
+  .btn_quality_and_relation_div{
+    margin-inline: 0px;
+    font-size: .9em;
+  }
+  .quality_and_relations_para_content_part{
+    font-size: .8em;
+  }
+  .assureP{
+    font-size: .9em;
+  }
+  .assureP2{
+    font-size: .9em;
   }
 }
 
@@ -810,6 +870,9 @@
   }
   .orderNowAndSendinquiryButtonP{
     font-size: 1.1em;
+  }
+  .reviewBoxSec{
+    padding: 10px;
   }
   .logo_on_page_quality_and_relationship_img{
     width: 100%;

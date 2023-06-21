@@ -1,51 +1,69 @@
-import React from "react";
+import React, { useContext, useState, useEffect } from "react";
+import LikedItemsContext from "../../context/LikedItemsContext";
+import { commerce } from "../../../lib/commerce";
 
 function LikedInventory() {
+  const { likedItems } = useContext(LikedItemsContext);
+  const [products, setProducts] = useState([]);
+
+  const fetchProducts = async () => {
+    const { data } = await commerce.products.list({
+      limit: 100,
+    });
+    setProducts(data);
+  };
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
+
+
   return (
     <div className="width-100 LIMainDiv">
-      <div className="res-1440-in LISecDiv">
-        <div className="LIHeadingDiv">
-          <p className="LIHeadingText">Liked Inventory</p>
-          <div className="LIheadingBrandingDiv">
-            <p className="LIheadingBrandingMain">Foreignerbelts</p>
-            <p className="LIheadingBrandingSub">originals</p>
+      {products && (
+        <div className="res-1440-in LISecDiv">
+          <div className="LIHeadingDiv">
+            <p className="LIHeadingText">Liked Inventory</p>
+            <div className="LIheadingBrandingDiv">
+              <p className="LIheadingBrandingMain">Foreignerbelts</p>
+              <p className="LIheadingBrandingSub">originals</p>
+            </div>
+          </div>
+          <div className="LIProductDiv">
+            {likedItems.map((item, index) => {
+              return <ProductDiv key={index} item={item} />;
+            })}
+          </div>
+          <div className="btnForSendInquiry">
+            <button className="btnForSendInquirySend">Send Inquiry</button>
+            <button className="btnForSendInquiryCancel">Cancel</button>
           </div>
         </div>
-        <div className="LIProductDiv">
-          <ProductDiv />
-          <ProductDiv />
-          <ProductDiv />
-        </div>
-        <div className="btnForSendInquiry">
-          <button className="btnForSendInquirySend">Send Inquiry</button>
-          <button className="btnForSendInquiryCancel">Cancel</button>
-        </div>
-      </div>
+      )}
     </div>
   );
 }
 
-function ProductDiv() {
+function ProductDiv({ item }) {
   return (
     <div className="ProductDivMain">
       <div className="ProductDivImgMain">
-        <img src="./images/LIProductBelt.png" className="ProductDivImg" />
+        <img src={item.image.url} className="ProductDivImg" />
       </div>
       <div className="ProductDivContentMain">
         <div className="ProductDivContentHeading">
-          <p className="ProductDivTitle">WWE® Raw Tag Team Title</p>
+          <p className="ProductDivTitle">{item.name}</p>
         </div>
         <div className="ProductDivContentDesc">
-          <p className="ProductDivDesc">
-            1/8” thick engraved metal plates Hand-tooled leather strap (your
-            choice of color) Unlimited color fill on plates Center plate
-            measures approx. 10” x 10”Side plates measure approx. 4” x 4”Stacked
-            plates available for an additional fee
-          </p>
+          <p
+            className="ProductDivDesc"
+            dangerouslySetInnerHTML={{
+              __html: item.description.slice(0, 200),
+            }}
+          />
         </div>
       </div>
-      <div className="ProductDivSelectMain">
-      </div>
+      <div className="ProductDivSelectMain"></div>
     </div>
   );
 }
