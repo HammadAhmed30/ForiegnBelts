@@ -66,16 +66,24 @@ const MainMenu = ({ menu, setMenu }) => {
       />
 
       <div className="main_menu_links">
-        <Link className="linker_a" to="/">
+        <Link onClick={()=>{
+          setMenu(false)
+        }} className="linker_a" to="/">
           Home
         </Link>
-        <Link className="linker_a" to="/inventory">
+        <Link onClick={()=>{
+          setMenu(false)
+        }} className="linker_a" to="/inventory">
           Inventory
         </Link>
-        <Link className="linker_a" to="">
+        <Link onClick={()=>{
+          setMenu(false)
+        }} className="linker_a" to="">
           Process
         </Link>
-        <Link className="linker_a" to="">
+        <Link onClick={()=>{
+          setMenu(false)
+        }} className="linker_a" to="">
           Contact
         </Link>
       </div>

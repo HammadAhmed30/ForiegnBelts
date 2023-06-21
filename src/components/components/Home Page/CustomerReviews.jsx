@@ -73,10 +73,6 @@ export default function CustomerReviews() {
               <a href="" className="orderNowAndSendinquiryButtonTag">
                 Order Now
               </a>{" "}
-              or{" "}
-              <a href="" className="orderNowAndSendinquiryButtonTag">
-                Send Inquiry
-              </a>{" "}
               to place
               <br />
               order for your desire wrestling belts

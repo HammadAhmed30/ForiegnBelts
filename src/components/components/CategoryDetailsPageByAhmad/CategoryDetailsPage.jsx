@@ -1,20 +1,39 @@
-/* eslint-disable jsx-a11y/alt-text */
-import React from "react";
-import SendAndCall from "../InventoryPageByAhmad/SendAndCall";
+import React, { useState, useEffect } from "react";
 import "../../../styles/TestPageForProductDetails.css";
+import "../../../styles/TestPageForLikedInventory.css";
+import { commerce } from "../../../lib/commerce";
+import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 
 function CategoryDetailsPage() {
+  const { cata, prodId } = useParams();
+  const [products, setProducts] = useState([]);
+  const fetchProducts = async () => {
+    const { data } = await commerce.products.list({
+      limit: 100,
+    });
+    setProducts(data);
+  };
+  console.log(products);
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
+
+  const filteredProducts = products.filter(
+    (item) => item.categories.map((prod) => prod.slug).toString() === cata
+  );
+
   return (
     <div className="width-100 PDMain">
-      <div className="res-1400-in PDSec">
+      <div className="res-1440-in PDSec">
         <div className="PDHeader">
           <p className="PDCategoryPath">Inventory/prime/product 2147</p>
           <div className="PDBrandingDiv">
             <p className="PDBrandingMain">
-              Foreignerbelts <br />
+              Foreignerbelts
+              <p className="PDBrandingSub">Originals</p>
             </p>
-            <br />
-            <p className="PDBrandingSub">Originals</p>
           </div>
         </div>
         <div className="PDCategoryImgCard">
@@ -22,7 +41,7 @@ function CategoryDetailsPage() {
             className="PDCategoryImg"
             src="./images/productDetailsCategoryImage.png"
           />
-          <span className="PDBestSellingTag">
+          {/* <span className="PDBestSellingTag">
             <img className="PDBestSellingTagStar" src="./images/BSStar.png" />
             <p className="PDBestSellingTagText">Best Selling</p>
           </span>
@@ -31,7 +50,7 @@ function CategoryDetailsPage() {
               className="PDCategoryImgZoomButtonImg"
               src="./images/Magnify.png"
             />
-          </div>
+          </div> */}
         </div>
 
         <div className="PDDetailsView">
@@ -70,8 +89,9 @@ function CategoryDetailsPage() {
           />
           <p className="PDDetailsProductRatingReviews">(125+ reviews)</p>
         </div>
-        <div className="SendButtonView">
-          <SendAndCall />
+        <div className="btnForSendInquiry">
+          <button className="btnForSendInquirySend">Send Inquiry</button>
+          <button className="btnForSendInquiryCancel">Cancel</button>
         </div>
       </div>
     </div>

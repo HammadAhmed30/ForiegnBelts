@@ -1,6 +1,7 @@
 /* Navbar */
 
 .navbar_main_navbar_cnt {
+
   position: relative;
   top: 0;
   z-index: 10;
@@ -8,7 +9,7 @@
   width: 100%;
   padding: 10px 0;
   /* overflow-x: hidden; */
-  z-index: 3;
+  z-index: 3000;
   background-color: black;
 }
 .navbar_flex_cnt {
