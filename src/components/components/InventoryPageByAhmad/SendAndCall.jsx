@@ -3,12 +3,12 @@ import React from "react";
 function SendAndCall() {
   return (
     <div className="SACDiv">
-      <div className="SendDiv">
-        <p className="SendText">Send Inquiry</p>
-      </div>
-      <div className="CallDiv">
-        <p className="CallText">Call Us</p>
-      </div>
+      <button className="SendButton">
+        <span className="ButtonSpan">Send Inquiry </span>
+      </button>
+      <button className="CallButton">
+        <span className="ButtonSpan">Call Us </span>
+      </button>
     </div>
   );
 }
