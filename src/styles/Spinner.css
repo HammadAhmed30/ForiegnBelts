@@ -1,0 +1,38 @@
+
+
+
+.spinnerContainer{
+    z-index: 4000;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    opacity: 1;
+    align-items: center;
+}
+
+.spinnerContainerImg{
+    width: 250px;
+    height: auto;
+    animation-name: Blinker;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+@keyframes Blinker {
+    0% , 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    
+}

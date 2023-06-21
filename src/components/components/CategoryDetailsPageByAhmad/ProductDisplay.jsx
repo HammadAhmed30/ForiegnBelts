@@ -1,43 +1,54 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
+import "../../../styles/TestPageForProductDetails.css";
+import { Link } from "react-router-dom";
 
 function ProductDisplay() {
   return (
-    <div className="PDisplayMainDiv">
+    <div className="PDisplayMainDiv res-1440-in">
       <div className="PDisplayHeadingDiv">
         <p className="PDisplayHeading">
           View more products from our other categories.
         </p>
       </div>
       <div className="PDisplaySpanDiv">
-        <ProductView />
-        <ProductView />
-        <ProductView />
-        <ProductView />
+        <Link to="/prime">
+        <ProductView name={"Prime"} img={"/images/image prime.png"} />
+        </Link>
+        
+        <Link to="/classic">
+        <ProductView name={"Classic"} img={"/images/image classic.png"}  />
+        </Link>
+        
+        <Link to="/economy">
+        <ProductView name={"Economy"} img={"/images/image economy.png"}  />
+        </Link>
+        
+        <Link to="/custom">
+        <ProductView name={"Custom"} img={"/images/image custom.png"}  />
+        </Link>
+        
       </div>
     </div>
   );
 }
 
-function ProductView() {
+function ProductView({name, img}) {
   return (
-    <span className="PDisplaySpan">
-      <img src="./images/LIProductBelt.png" className="PDisplaySpanImg" />
+    <div className="PDisplaySpan" style={{color:"black"}}>
+      <img src={img} className="PDisplaySpanImg" />
       <div className="PDisplaySpanTitleView">
         <div className="PDisplayTitleDiv">
-          <p className="PDisplaySpanTitle">WWE® Raw Tag Team Title</p>
-          <p className="PDisplaySpanSubtitle">Product Code: 7584231</p>
+          <p className="PDisplaySpanTitle">{name}</p>
         </div>
         <div className="PDisplayLikeView">
-          <img src="" className="PDisplaySpanLikeImg" />
-          <p className="PDisplaySpanLikeText">Like</p>
+          <div></div>
+          <div className="PDisplayRatingView">
+            <img src="/images/ReviewStars.png" className="PDisplayRatingImg" />
+            <p className="PDisplayRatingText">(125+ reviews)</p>
+          </div>
         </div>
       </div>
-      <div className="PDisplayRatingView">
-        <img src="./images/ReviewStars.png" className="PDisplayRatingImg" />
-        <p className="PDisplayRatingText">(125+ reviews)</p>
-      </div>
-    </span>
+    </div>
   );
 }
 

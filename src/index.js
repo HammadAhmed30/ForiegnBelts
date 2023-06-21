@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './components/components/Header Footer/Navbar';
 import { BrowserRouter } from "react-router-dom";
+import Footer from './components/components/Header Footer/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
       <div style={{ width: "100%", overflowX: "hidden" }}>
         <Navbar />
         <App />
+        <Footer/>
       </div>
     </React.StrictMode>
   </BrowserRouter>

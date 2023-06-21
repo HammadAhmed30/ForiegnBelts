@@ -4,25 +4,21 @@
 
 .PDMain {
   overflow: hidden;
-  z-index: 3;
+  z-index: 1;
   justify-content: space-between;
 }
 
 .PDHeader {
   display: flex;
-  margin-top: 4%;
-  margin-bottom: 4%;
+  margin-top: 4em;
+  margin-bottom: 4em;
   flex-direction: row;
   justify-content: space-between;
-  margin-inline: 10%;
-}
-
-.PDSec {
-  width: 100%;
-  height: 100%;
 }
 
 .PDBrandingDiv {
+  display: flex;
+  align-items: center;
   justify-content: space-evenly;
 }
 
@@ -30,8 +26,8 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 1rem;
+  line-height: 1rem;
   color: #000000;
 }
 
@@ -57,13 +53,13 @@
 .PDCategoryImgCard {
   position: relative;
   margin-inline: auto;
-  width: 70%;
+  width: 100%;
+  text-align: center;
   height: auto;
-  background-color: pink;
 }
 
 .PDCategoryImg {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
@@ -132,22 +128,22 @@
 /* Product Details Descriptions */
 
 .PDDetailsView {
-  margin-top: 10rem;
-  width: 70%;
+  margin-top: 6em;
+  width: min(100% , 1000px);
   align-self: center;
+  margin-inline: auto;
   height: auto;
-  margin-inline: 10%;
   display: flex;
   justify-content: space-between;
 }
 
 .PDDetailsViewSec {
-  width: 100%;
+  width: 45%;
   height: auto;
 }
 
 .PDDetailsViewTer {
-  width: 100%;
+  width: 45%;
   height: auto;
 }
 
@@ -155,10 +151,10 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 2.7rem;
-  line-height: 140%;
+  font-size: 2.5rem;
+  line-height: 120%;
   color: #000000;
-  margin-bottom: 4rem;
+  margin-bottom: 1em;
 }
 
 .PDDetailsDescriptionH {
@@ -184,16 +180,15 @@
 
 .PDDetailsProductRatingView {
   display: flex;
+  margin-top: 20px;
   flex-direction: row;
   justify-content: right;
-  margin-inline-end: 10%;
   align-items: center;
 }
 
 .PDDetailsProductRatingStars {
-  margin-inline-end: 1%;
-  width: 6%;
-  height: auto;
+  margin-right: 10px;
+  height: 15px;
   object-fit: contain;
 }
 
@@ -208,14 +203,16 @@
 
 .PDDetailBeltView {
   display: flex;
+  width: 100%;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .PDDetailsBeltImg {
-  width: 50%;
+  width: 45%;
   height: auto;
-  margin-inline-end: 10%;
-  margin-bottom: 2.85rem;
+  margin-bottom: 2em;
 }
 
 .PDDetailsTerH {
@@ -236,3 +233,99 @@
   line-height: 22px;
   color: #000000;
 }
+.PDisplaySpanDiv{
+  width: 70%;
+  margin-bottom: 2em;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  grid-auto-rows: 400px;
+}
+.PDisplaySpan{
+  position: relative;
+  background-color: #D9D9D9;
+  width: 100%;
+  height: 100%;
+}
+.PDisplaySpanImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.PDisplayHeading{
+  margin: 2em 0;
+  font-size: 2em;
+}
+.PDisplaySpan_img{
+  width: 100%;
+  height: 100%;
+}
+.PDisplaySpanLikeImg{
+  width: 20px;
+  cursor: pointer;
+}
+.PDisplayRatingImg{
+  height: 10px;
+}
+.PDisplayRatingText{
+  font-size: .7em;
+}
+.PDisplayLikeView{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.PDisplayRatingView{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.PDisplaySpanTitleView{
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 20px);
+  background-color: #D9D9D9;
+  padding: 10px;
+}
+.PDisplaySpanTitle{
+  line-height: 100%;
+  margin-bottom: 10px;
+}
+/* Media Quries */
+
+
+@media only screen and (max-width: 1000px) {
+  .PDCategoryImg{
+    width: 90%;
+  }
+
+}
+@media only screen and (max-width: 800px) {
+  .PDCategoryImg{
+    width: 100%;
+  }
+  .PDDetailsView{
+    margin-top: 3em;
+    flex-direction: column;
+  }
+  .PDDetailsViewSec{
+    width: 100%;
+  }
+  .PDDetailsViewTer{
+    width: 100%;
+  }
+  .PDisplayHeading{
+    font-size: 1em;
+  }
+  .PDisplaySpanDiv{
+    width: 100%;
+  }
+  .PDisplaySpanDiv{
+    grid-template-columns: 1fr;
+  }
+}
+
