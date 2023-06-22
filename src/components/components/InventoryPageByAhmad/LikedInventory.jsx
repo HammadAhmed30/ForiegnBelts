@@ -1,6 +1,8 @@
 import React, { useContext, useState, useEffect } from "react";
 import LikedItemsContext from "../../context/LikedItemsContext";
 import { commerce } from "../../../lib/commerce";
+import { Link } from "react-router-dom";
+
 
 function LikedInventory() {
   const { likedItems } = useContext(LikedItemsContext);
@@ -16,7 +18,6 @@ function LikedInventory() {
   useEffect(() => {
     fetchProducts();
   }, []);
-
 
   return (
     <div className="width-100 LIMainDiv">
@@ -44,7 +45,16 @@ function ProductDiv({ item }) {
   return (
     <div className="ProductDivMain">
       <div className="ProductDivImgMain">
-        <img src={item.image.url} className="ProductDivImg" />
+        <Link
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+          to={`/${item.categories.map((prod) => prod.slug).toString()}/${
+            item.id
+          }`}
+        >
+          <img src={item.image.url} className="ProductDivImg" />
+        </Link>
       </div>
       <div className="ProductDivContentMain">
         <div className="ProductDivContentHeading">

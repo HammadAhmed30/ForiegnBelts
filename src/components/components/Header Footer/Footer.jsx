@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="ourFeaturesMain res-1440-in" style={{zIndex:"100"}}>
           <div className="ourFeaturesBox">
             <img
-              src="./images/image2.png"
+              src="/images/image2.png"
               alt="truck"
               className="ourFeaturesImage"
             />
@@ -17,7 +17,7 @@ export default function Footer() {
           </div>
           <div className="ourFeaturesBox">
             <img
-              src="./images/image1.png"
+              src="/images/image1.png"
               alt=""
               className="ourFeaturesImage"
             />
@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
           <div className="ourFeaturesBox">
             <img
-              src="./images/image3.png"
+              src="/images/image3.png"
               alt=""
               className="ourFeaturesImage"
             />
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
           <div className="ourFeaturesBox">
             <img
-              src="./images/image4.png"
+              src="/images/image4.png"
               alt=""
               className="ourFeaturesImage"
             />
