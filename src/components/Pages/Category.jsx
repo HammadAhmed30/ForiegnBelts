@@ -19,10 +19,11 @@ export default function Category() {
     setProducts(data);
     setLoading(false);
   };
-  console.log(products);
 
   useEffect(() => {
+    document.title=`${cata.toUpperCase()} Belts | Foreignerbelts`
     fetchProducts();
+
   }, []);
 
   const filteredProducts = products.filter(
@@ -81,6 +82,9 @@ function ProductView({ itemName, itemImg, itemId, item }) {
   return (
     <div className="PDisplaySpan" style={{ color: "black" }}>
       <Link
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
         to={`/${item.categories.map((prod) => prod.slug).toString()}/${
           item.id
         }`}

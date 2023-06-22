@@ -11,30 +11,49 @@ function ProductDisplay() {
         </p>
       </div>
       <div className="PDisplaySpanDiv">
-        <Link to="/prime">
-        <ProductView name={"Prime"} img={"/images/image prime.png"} />
+        <Link
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+          to="/prime"
+        >
+          <ProductView name={"Prime"} img={"/images/Image prime.png"} />
         </Link>
-        
-        <Link to="/classic">
-        <ProductView name={"Classic"} img={"/images/image classic.png"}  />
+
+        <Link
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+          to="/classic"
+        >
+          <ProductView name={"Classic"} img={"/images/image classic.png"} />
         </Link>
-        
-        <Link to="/economy">
-        <ProductView name={"Economy"} img={"/images/image economy.png"}  />
+
+        <Link
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+          to="/economy"
+        >
+          <ProductView name={"Economy"} img={"/images/image economy.png"} />
         </Link>
-        
-        <Link to="/custom">
-        <ProductView name={"Custom"} img={"/images/image custom.png"}  />
+
+        <Link
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+          to="/custom"
+        >
+          <ProductView name={"Custom"} img={"/images/Image custom.png"} />
         </Link>
-        
       </div>
     </div>
   );
 }
 
-function ProductView({name, img}) {
+function ProductView({ name, img }) {
   return (
-    <div className="PDisplaySpan" style={{color:"black"}}>
+    <div className="PDisplaySpan" style={{ color: "black" }}>
       <img src={img} className="PDisplaySpanImg" />
       <div className="PDisplaySpanTitleView">
         <div className="PDisplayTitleDiv">

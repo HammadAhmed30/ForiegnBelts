@@ -1,5 +1,4 @@
 import React from "react";
-import SendAndCall from "../InventoryPageByAhmad/SendAndCall.jsx";
 
 function InquiryForm() {
   return (
@@ -10,8 +9,8 @@ function InquiryForm() {
           <br />
           <span className="hTopInvenSpan">originals</span>
         </h1>
+        <hr />
       </div>
-      <div className="IFDivider"></div>
       <div className="IFMainCard">
         <div className="IFFormInputs">
           <h1 className="IFHeading">Inquiry Form</h1>
@@ -42,11 +41,14 @@ function InquiryForm() {
               <InputField placeholder={"Order Details"} />
             </div>
             <div className="IFSingleInputFull">
-              <InputField placeholder={"Cutsom Message"} />
+              <p className="IFPlaceholder">Custom Message</p>
+              <textarea
+                name=""
+                id=""
+                className="IFInputField_1"
+                rows="1"
+              ></textarea>
             </div>
-          </div>
-          <div className="SendAndCall">
-            <SendAndCall />
           </div>
         </div>
         <div className="IFHowThingsWork-HTW">
@@ -75,6 +77,14 @@ function InquiryForm() {
               }
             />
           </div>
+        </div>
+      </div>
+      <div className="btn_send_i_call res-1440-in">
+        <div>
+          <button className="send_inquiry_btn_send_INQUIRY MAIN_BTN">
+            Send Inquiry
+          </button>
+          <button className="call_inquiry_btn_CALL_US MAIN_BTN">Call Us</button>
         </div>
       </div>
     </div>

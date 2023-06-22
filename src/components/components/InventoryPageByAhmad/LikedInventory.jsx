@@ -34,10 +34,6 @@ function LikedInventory() {
               return <ProductDiv key={index} item={item} />;
             })}
           </div>
-          <div className="btnForSendInquiry">
-            <button className="btnForSendInquirySend">Send Inquiry</button>
-            <button className="btnForSendInquiryCancel">Cancel</button>
-          </div>
         </div>
       )}
     </div>

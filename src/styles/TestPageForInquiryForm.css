@@ -33,9 +33,37 @@
   flex-direction: row;
   width: 85%;
   height: auto;
-  margin: 7.5rem 0rem;
+  margin: 3em 0rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   align-items: center;
+  border-radius: 5px;
+}
+
+.btn_send_i_call {
+  text-align: right;
+  margin-bottom: 1em;
+}
+
+.MAIN_BTN {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.98em;
+  border-radius: 5px;
+  font-weight: 300;
+}
+.send_inquiry_btn_send_INQUIRY {
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  margin-right: 20px;
+}
+.call_inquiry_btn_CALL_US {
+  padding: 10px 20px;
+  color: black;
+  margin-right: 20px;
+  border: 1px solid black;
 }
 
 .IFHowThingsWork-HTW {
@@ -58,7 +86,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 2.25rem;
+  margin-bottom: 1em;
 }
 
 .IFStepView {
@@ -88,6 +116,10 @@
 
 .IFFormInputs {
   width: 66.67%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background: #ececec;
   padding: 2rem 4rem;
 }
@@ -133,9 +165,7 @@
 }
 
 .IFMainForm {
-  width: 85%;
-  justify-content: space-evenly;
-  margin-bottom: 1rem;
+  width: 95%;
 }
 
 .IFDoubleInputs {
@@ -156,8 +186,28 @@
   margin-bottom: -8rem;
   margin-inline-end: 10rem;
 }
+.IFInputField_1 {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #767676;
+  outline: none;
+  height: 50px;
+}
 
-/* bg none;
-outline none;
- border none;
- border-bottom 2px solid black; */
+@media only screen and (max-width: 900px) {
+  .IFMainCard {
+    flex-direction: column;
+    flex-flow: column-reverse;
+    width: 100%;
+  }
+  .IFHowThingsWork-HTW {
+    width: 90%;
+  }
+  .IFFormInputs {
+    width: 100%;
+  }
+  .IFSingleInputHalf {
+    width: 48%;
+  }
+}

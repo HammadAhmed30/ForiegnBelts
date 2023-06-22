@@ -327,5 +327,20 @@
   .PDisplaySpanDiv{
     grid-template-columns: 1fr;
   }
+  .PDBrandingMain{
+    font-size: .9rem;
+  }
+  .PDBrandingSub{
+    font-size: .8rem;
+  }
+  .PDCategoryPath{
+    font-size: .8em;
+    width: 50%;
+    word-wrap: break-word;
+  }
+  .PDDetailsTitle{
+    font-size: 1.8em;
+  }
+  
 }
 

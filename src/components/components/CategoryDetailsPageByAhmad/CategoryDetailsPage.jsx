@@ -3,17 +3,20 @@ import "../../../styles/TestPageForProductDetails.css";
 import "../../../styles/TestPageForLikedInventory.css";
 import { commerce } from "../../../lib/commerce";
 import { useParams } from "react-router";
+import Spinner from "../Spinner/Spinner";
+
 
 function CategoryDetailsPage() {
   const { cata, prodId } = useParams();
+  const [loading, setLoading] = useState(true)
   const [products, setProducts] = useState([]);
   const fetchProducts = async () => {
     const { data } = await commerce.products.list({
       limit: 100,
     });
     setProducts(data);
+    setLoading(false)
   };
-  console.log(products);
 
   useEffect(() => {
     fetchProducts();
@@ -23,13 +26,16 @@ function CategoryDetailsPage() {
     (item) => item.categories.map((prod) => prod.slug).toString() === cata
   );
   const particular_data = products.find((prod) => prod.id === prodId);
+  document.title=`${particular_data.name} | Foreignerbelts`
+
 
   return (
     <div className="width-100 PDMain">
+      { loading && <Spinner/>}
       {particular_data && (
         <div className="res-1440-in PDSec">
           <div className="PDHeader">
-            <p className="PDCategoryPath">Inventory/prime/product 2147</p>
+            <p className="PDCategoryPath">Inventory/prime/Product</p>
             <div className="PDBrandingDiv">
               <p className="PDBrandingMain">
                 Foreignerbelts
@@ -39,16 +45,6 @@ function CategoryDetailsPage() {
           </div>
           <div className="PDCategoryImgCard">
             <img className="PDCategoryImg" src={particular_data.image.url} />
-            {/* <span className="PDBestSellingTag">
-            <img className="PDBestSellingTagStar" src="./images/BSStar.png" />
-            <p className="PDBestSellingTagText">Best Selling</p>
-          </span>
-          <div className="PDCategoryImgZoomButton">
-            <img
-              className="PDCategoryImgZoomButtonImg"
-              src="./images/Magnify.png"
-            />
-          </div> */}
           </div>
 
           <div className="PDDetailsView">
