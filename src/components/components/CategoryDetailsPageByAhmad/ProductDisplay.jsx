@@ -44,7 +44,7 @@ function ProductDisplay() {
           }}
           to="/custom"
         >
-          <ProductView name={"Custom"} img={"/images/Image custom.png"} />
+          <ProductView name={"Custom"} img={"/images/Image Custom.png"} />
         </Link>
       </div>
     </div>

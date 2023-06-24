@@ -6,7 +6,6 @@ import { useParams } from "react-router";
 import Spinner from "../Spinner/Spinner";
 import { Link } from "react-router-dom";
 
-
 function CategoryDetailsPage() {
   const { cata, prodId } = useParams();
   const [loading, setLoading] = useState(true);
@@ -86,13 +85,15 @@ function CategoryDetailsPage() {
               onClick={() => {
                 window.scrollTo(0, 0);
               }}
-              to={`/${particular_data.categories.map((prod) => prod.slug).toString()}/${
-                particular_data.id
-              }/inquiry`}
+              to={`/${particular_data.categories
+                .map((prod) => prod.slug)
+                .toString()}/${particular_data.id}/inquiry`}
             >
               <button className="btnForSendInquirySend">Send Inquiry</button>
             </Link>
-            <button className="btnForSendInquiryCancel">Cancel</button>
+            <a href="tel:+923121787526">
+              <button className="btnForSendInquiryCancel">Call Us</button>
+            </a>
           </div>
         </div>
       )}
