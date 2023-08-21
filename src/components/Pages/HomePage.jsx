@@ -8,7 +8,7 @@ import CustomerReviews from "../components/Home Page/CustomerReviews";
 
 export default function HomePage() {
   useEffect(()=>{
-    document.title="Home | Foreignerbelts"
+    document.title="Foriegner Belts"
   },[])
   return (
     <div className="width-100">
